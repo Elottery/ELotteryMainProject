@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93F0BCEE6F4D67FF57204FBC /* libPods-ELotteryMainProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCCAB6811287CF7265D912A /* libPods-ELotteryMainProject.a */; };
 		999E73D71E7A65C100FDC54A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 999E73D61E7A65C100FDC54A /* main.m */; };
 		999E73DA1E7A65C100FDC54A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 999E73D91E7A65C100FDC54A /* AppDelegate.m */; };
 		999E73DD1E7A65C100FDC54A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 999E73DC1E7A65C100FDC54A /* ViewController.m */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8ADD1E8319B26268CF9E2B6F /* Pods-ELotteryMainProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELotteryMainProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-ELotteryMainProject/Pods-ELotteryMainProject.release.xcconfig"; sourceTree = "<group>"; };
 		999E73D21E7A65C100FDC54A /* ELotteryMainProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ELotteryMainProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		999E73D61E7A65C100FDC54A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		999E73D81E7A65C100FDC54A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +53,8 @@
 		999E73F61E7A65C100FDC54A /* ELotteryMainProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ELotteryMainProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		999E73FA1E7A65C100FDC54A /* ELotteryMainProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELotteryMainProjectUITests.m; sourceTree = "<group>"; };
 		999E73FC1E7A65C100FDC54A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACCCAB6811287CF7265D912A /* libPods-ELotteryMainProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ELotteryMainProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF81CCA11CB771BDEF33E041 /* Pods-ELotteryMainProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELotteryMainProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ELotteryMainProject/Pods-ELotteryMainProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93F0BCEE6F4D67FF57204FBC /* libPods-ELotteryMainProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10B48C6D8C99FF80C8CC1847 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF81CCA11CB771BDEF33E041 /* Pods-ELotteryMainProject.debug.xcconfig */,
+				8ADD1E8319B26268CF9E2B6F /* Pods-ELotteryMainProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		999E73C91E7A65C100FDC54A = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +99,8 @@
 				999E73EE1E7A65C100FDC54A /* ELotteryMainProjectTests */,
 				999E73F91E7A65C100FDC54A /* ELotteryMainProjectUITests */,
 				999E73D31E7A65C100FDC54A /* Products */,
+				10B48C6D8C99FF80C8CC1847 /* Pods */,
+				DF92DAA879AFC8AED03F35E8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +156,14 @@
 			path = ELotteryMainProjectUITests;
 			sourceTree = "<group>";
 		};
+		DF92DAA879AFC8AED03F35E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACCCAB6811287CF7265D912A /* libPods-ELotteryMainProject.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 999E73FF1E7A65C100FDC54A /* Build configuration list for PBXNativeTarget "ELotteryMainProject" */;
 			buildPhases = (
+				27841DF4AEE0E3F04F6C55DB /* [CP] Check Pods Manifest.lock */,
 				999E73CE1E7A65C100FDC54A /* Sources */,
 				999E73CF1E7A65C100FDC54A /* Frameworks */,
 				999E73D01E7A65C100FDC54A /* Resources */,
+				402CDF077009884E0F906850 /* [CP] Embed Pods Frameworks */,
+				CB05114B8A9EDFF6DB19A50B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,7 +234,7 @@
 				TargetAttributes = {
 					999E73D11E7A65C100FDC54A = {
 						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					999E73EA1E7A65C100FDC54A = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -267,6 +294,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27841DF4AEE0E3F04F6C55DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		402CDF077009884E0F906850 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ELotteryMainProject/Pods-ELotteryMainProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB05114B8A9EDFF6DB19A50B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ELotteryMainProject/Pods-ELotteryMainProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		999E73CE1E7A65C100FDC54A /* Sources */ = {
@@ -420,8 +495,10 @@
 		};
 		999E74001E7A65C100FDC54A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF81CCA11CB771BDEF33E041 /* Pods-ELotteryMainProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ELotteryMainProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dreamtracer.ELotteryMainProject;
@@ -431,8 +508,10 @@
 		};
 		999E74011E7A65C100FDC54A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8ADD1E8319B26268CF9E2B6F /* Pods-ELotteryMainProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ELotteryMainProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dreamtracer.ELotteryMainProject;
